@@ -1,14 +1,63 @@
 <style>
+  :root {
+    --bg: #000201;
+	--greenerBg: #0c0e0d;
+	--text: #f2f2f2;
+	--accent1: #59dafb;
+	--accent2: #a5fb59;
+	--dimText: #444444;
+  }
   .hero {
     display: flex;
     text-align: center;
+    transform: translateY(-40px);
     flex-direction: column;
   }
   body {
+    background: var(--bg);
+    color: var(--text);
     margin: 0;
+    padding: 20px;
+    height: calc(100vh - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin-bottom: 0px;
+  }
+  .dimText {
+    color: var(--dimText);
+  }
+  h1 {
+    font-size: 5em;
+  }
+  .accentBlue {
+	color: var(--accent1);
+  }
+  .blue {
+	--accent: var(--accent1);
+  }
+  .green {
+	--accent: var(--accent2);
+  }
+  .halfAccent {
+	background: linear-gradient(180deg, var(--text) 50%, var(--accent) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+  }
+  .halfAccentTop {
+	background: linear-gradient(0, var(--text) 30%, var(--accent) 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
   }
 </style>
 <div class="hero">
-  <h1>Hello!</h1>
-  <p>I'm James!</p>
+  <h1 class="halfAccent blue">Hello!</h1>
+  <p>I'm James!<br />
+    This is  a profile page for <a href="https://morp.hackclub.com/">Morp</a> from <a href="https://hackclub.com/">Hack Club.</a><br />
+    I'm not quite sure what the minimum requirements are, so here I am!<br /><br /></p>
+  <p class="dimText">A lot of the values in this page are hardcoded, so it might not look great for you. Sorry!</p>
 </div>
