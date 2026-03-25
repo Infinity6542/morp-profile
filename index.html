@@ -53,11 +53,26 @@
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
   }
+  button {
+    background: var(--bg);
+    outline: solid 3px var(--accent1);
+    border: none;
+    color: var(--text);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+    background: var(--accent1);
+    color: var(--bg);
+  }
 </style>
 <div class="hero">
   <h1 class="halfAccent blue">Hello!</h1>
   <p>I'm James!<br />
     This is  a profile page for <a href="https://morp.hackclub.com/">Morp</a> from <a href="https://hackclub.com/">Hack Club.</a><br />
     I'm not quite sure what the minimum requirements are, so here I am!<br /><br /></p>
-  <p class="dimText">A lot of the values in this page are hardcoded, so it might not look great for you. Sorry!</p>
+  <a href="https://jchen.au"><button>Leaarn more about me</button></a>
+  <p class="dimText"><br /><br />A lot of the values in this page are hardcoded, so it might not look great for you. Sorry!</p>
 </div>
